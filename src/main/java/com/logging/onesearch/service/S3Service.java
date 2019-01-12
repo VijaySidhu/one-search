@@ -101,7 +101,7 @@ public class S3Service {
         String bucketPath = "s3://" + bucket + "/";
         Resource s3Resource = resourceLoader.getResource(bucketPath + filename);
 
-        String s3FileName = filename.substring(filename.lastIndexOf("/"));
+        String s3FileName = filename;//filename.substring(filename.lastIndexOf("/"));
         s3FileName = s3FileName.replace("/", "");
 
         logger.info("Downloading File: {} from S3", s3FileName);
