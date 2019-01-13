@@ -61,7 +61,7 @@ public class S3Service {
 
         String bucketPath = "s3://" + bucket + "/";
         Resource resource = this.resourceLoader.getResource(bucketPath+path+ "/"+ fileName);
-
+        // TODO Replace with logger
         System.out.println("Storing File :"+bucketPath+path+ "/"+ fileName);
 
         WritableResource writableResource = (WritableResource) resource;
